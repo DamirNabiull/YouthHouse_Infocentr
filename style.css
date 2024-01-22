@@ -1,0 +1,141 @@
+html {
+    overflow: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    background: transparent;
+    /* make scrollbar transparent */
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* .startBlock {
+    background-image: url("./images/startBlock.png");
+    height: 1920px;
+    width: 1080px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+} */
+
+.background {
+    background-image: url("./images/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1920px;
+    width: 1080px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.infocentr {
+    height: 1920px;
+    width: 1080px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    visibility: hidden;
+}
+
+.mainPageBlock {
+    height: 1920px;
+    width: 1080px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.scrollableMenu {
+    position: absolute;
+    width: 338px;
+    height: 1370px;
+    margin-left: 53px;
+    margin-top: 440px;
+}
+
+.scroller_1 {
+    width: auto;
+    height: 100%;
+    max-width: 338px;
+    max-height: 1370px;
+    display: flex;
+    flex-flow: column nowrap;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+}
+
+.button {
+    width: 337px;
+    height: 120px;
+    border-radius: 200px;
+    background-color: #FFFFFF;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#button1 {
+    margin-top: 640px;
+}
+
+#button21 {
+    margin-bottom: 640px;
+}
+
+.emptyImage {
+    width: 337px;
+    height: 1000px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.mask {
+    pointer-events: none;
+    position: absolute;
+    width: 344px;
+    height: 1427px;
+    margin-left: 53px;
+    margin-top: 440px;
+    background-image: url("./images/mask_group.png");
+}
+
+.infoBlock {
+    position: absolute;
+    width: 622px;
+    height: 1454px;
+    margin-left: 408px;
+    margin-top: 416px;
+    /* background-image: url("./images/background18.png"); */
+    backdrop-filter: blur(5px);
+}
+
+.infoScrollWrapper {
+    margin-top: 140px;
+    margin-left: 40px;
+    width: auto;
+    height: 100%;
+    max-width: 557px;
+    max-height: 1280px;
+    display: flex;
+    flex-flow: column nowrap;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+}
+
+img {
+    scroll-snap-align: center;
+    /* flex: 1 1 auto; */
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none
+}
